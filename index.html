@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Teacher Appointment Booking</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="container">
         <div id="register">
@@ -25,7 +27,7 @@
             <p id="login-message"></p>
         </div>
     </div>
-    
+
     <!-- Import Firebase as modules -->
     <script type="module">
         // Import the Firebase SDK
@@ -85,7 +87,7 @@
                     const user = userCredential.user;
                     console.log('User logged in:', user);
                     document.getElementById('login-message').innerText = 'Login successful!';
-                    
+
                     // Redirect to book-appointment page
                     window.location.href = 'book-appointment.html';
                 })
@@ -118,4 +120,5 @@
         });
     </script>
 </body>
+
 </html>
